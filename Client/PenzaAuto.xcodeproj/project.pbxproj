@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC5EAA2C22DDD6E100C072D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5EAA2B22DDD6E100C072D1 /* AppDelegate.swift */; };
+		CC5EAA2E22DDD6E100C072D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5EAA2D22DDD6E100C072D1 /* ViewController.swift */; };
+		CC5EAA3322DDD70300C072D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC5EAA3222DDD70300C072D1 /* Assets.xcassets */; };
+		CC5EAA3622DDD70300C072D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC5EAA3422DDD70300C072D1 /* LaunchScreen.storyboard */; };
+		CC5EAA4122DDD70300C072D1 /* PenzaAutoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5EAA4022DDD70300C072D1 /* PenzaAutoTests.swift */; };
+		CC5EAA4C22DDD70400C072D1 /* PenzaAutoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5EAA4B22DDD70400C072D1 /* PenzaAutoUITests.swift */; };
+		CC9A20AB22E200E100309E6F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC9A20AA22E200E100309E6F /* ViewController.xib */; };
+		CC9A20AC22E200E100309E6F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC9A20AA22E200E100309E6F /* ViewController.xib */; };
+		CC9A20AD22E200E100309E6F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC9A20AA22E200E100309E6F /* ViewController.xib */; };
+		CC9DF70422DF1B6000534E24 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CC9DF70322DF1B6000534E24 /* Podfile */; };
+		CCB445BF22E1F20A0097928C /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB445BE22E1F20A0097928C /* LoginPresenter.swift */; };
+		CCB445C122E1F2180097928C /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB445C022E1F2180097928C /* LoginModel.swift */; };
+		CCB445C322E1F2330097928C /* NetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB445C222E1F2330097928C /* NetWork.swift */; };
+		FA9A6B7F0BA892B73504FB75 /* Pods_PenzaAuto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DA1308CAD3B48C5EFF9881 /* Pods_PenzaAuto.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC5EAA3D22DDD70300C072D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC5EAA2022DDD6E000C072D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC5EAA2722DDD6E000C072D1;
+			remoteInfo = PenzaAuto;
+		};
+		CC5EAA4822DDD70400C072D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC5EAA2022DDD6E000C072D1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC5EAA2722DDD6E000C072D1;
+			remoteInfo = PenzaAuto;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		19DA1308CAD3B48C5EFF9881 /* Pods_PenzaAuto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PenzaAuto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6457FC38B6FBDC4035174295 /* Pods-PenzaAuto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PenzaAuto.debug.xcconfig"; path = "Target Support Files/Pods-PenzaAuto/Pods-PenzaAuto.debug.xcconfig"; sourceTree = "<group>"; };
+		CC5EAA2822DDD6E000C072D1 /* PenzaAuto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PenzaAuto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC5EAA2B22DDD6E100C072D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC5EAA2D22DDD6E100C072D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CC5EAA3222DDD70300C072D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC5EAA3522DDD70300C072D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC5EAA3722DDD70300C072D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC5EAA3C22DDD70300C072D1 /* PenzaAutoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PenzaAutoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC5EAA4022DDD70300C072D1 /* PenzaAutoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenzaAutoTests.swift; sourceTree = "<group>"; };
+		CC5EAA4222DDD70400C072D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC5EAA4722DDD70400C072D1 /* PenzaAutoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PenzaAutoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC5EAA4B22DDD70400C072D1 /* PenzaAutoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenzaAutoUITests.swift; sourceTree = "<group>"; };
+		CC5EAA4D22DDD70400C072D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC9A20AA22E200E100309E6F /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		CC9DF70322DF1B6000534E24 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CCB445BE22E1F20A0097928C /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		CCB445C022E1F2180097928C /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		CCB445C222E1F2330097928C /* NetWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWork.swift; sourceTree = "<group>"; };
+		D6D5BB9177B669E022BFFA4E /* Pods-PenzaAuto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PenzaAuto.release.xcconfig"; path = "Target Support Files/Pods-PenzaAuto/Pods-PenzaAuto.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC5EAA2522DDD6E000C072D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9A6B7F0BA892B73504FB75 /* Pods_PenzaAuto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC5EAA3922DDD70300C072D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC5EAA4422DDD70400C072D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8810E8F29CBF270E896E55C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19DA1308CAD3B48C5EFF9881 /* Pods_PenzaAuto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA50ADA204A5890EE94F8A3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6457FC38B6FBDC4035174295 /* Pods-PenzaAuto.debug.xcconfig */,
+				D6D5BB9177B669E022BFFA4E /* Pods-PenzaAuto.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CC5EAA1F22DDD6E000C072D1 = {
+			isa = PBXGroup;
+			children = (
+				CC9DF70322DF1B6000534E24 /* Podfile */,
+				CC5EAA2A22DDD6E000C072D1 /* PenzaAuto */,
+				CC5EAA3F22DDD70300C072D1 /* PenzaAutoTests */,
+				CC5EAA4A22DDD70400C072D1 /* PenzaAutoUITests */,
+				CC5EAA2922DDD6E000C072D1 /* Products */,
+				CA50ADA204A5890EE94F8A3A /* Pods */,
+				A8810E8F29CBF270E896E55C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CC5EAA2922DDD6E000C072D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC5EAA2822DDD6E000C072D1 /* PenzaAuto.app */,
+				CC5EAA3C22DDD70300C072D1 /* PenzaAutoTests.xctest */,
+				CC5EAA4722DDD70400C072D1 /* PenzaAutoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC5EAA2A22DDD6E000C072D1 /* PenzaAuto */ = {
+			isa = PBXGroup;
+			children = (
+				CC5EAA2B22DDD6E100C072D1 /* AppDelegate.swift */,
+				CC5EAA2D22DDD6E100C072D1 /* ViewController.swift */,
+				CC9A20AA22E200E100309E6F /* ViewController.xib */,
+				CCB445C022E1F2180097928C /* LoginModel.swift */,
+				CCB445C222E1F2330097928C /* NetWork.swift */,
+				CCB445BE22E1F20A0097928C /* LoginPresenter.swift */,
+				CC5EAA3222DDD70300C072D1 /* Assets.xcassets */,
+				CC5EAA3422DDD70300C072D1 /* LaunchScreen.storyboard */,
+				CC5EAA3722DDD70300C072D1 /* Info.plist */,
+			);
+			path = PenzaAuto;
+			sourceTree = "<group>";
+		};
+		CC5EAA3F22DDD70300C072D1 /* PenzaAutoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC5EAA4022DDD70300C072D1 /* PenzaAutoTests.swift */,
+				CC5EAA4222DDD70400C072D1 /* Info.plist */,
+			);
+			path = PenzaAutoTests;
+			sourceTree = "<group>";
+		};
+		CC5EAA4A22DDD70400C072D1 /* PenzaAutoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC5EAA4B22DDD70400C072D1 /* PenzaAutoUITests.swift */,
+				CC5EAA4D22DDD70400C072D1 /* Info.plist */,
+			);
+			path = PenzaAutoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC5EAA2722DDD6E000C072D1 /* PenzaAuto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC5EAA5022DDD70400C072D1 /* Build configuration list for PBXNativeTarget "PenzaAuto" */;
+			buildPhases = (
+				E510280B27FD83800A14773D /* [CP] Check Pods Manifest.lock */,
+				CC5EAA2422DDD6E000C072D1 /* Sources */,
+				CC5EAA2522DDD6E000C072D1 /* Frameworks */,
+				CC5EAA2622DDD6E000C072D1 /* Resources */,
+				CAD483E95A4CA211288BBCBC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PenzaAuto;
+			productName = PenzaAuto;
+			productReference = CC5EAA2822DDD6E000C072D1 /* PenzaAuto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC5EAA3B22DDD70300C072D1 /* PenzaAutoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC5EAA5322DDD70400C072D1 /* Build configuration list for PBXNativeTarget "PenzaAutoTests" */;
+			buildPhases = (
+				CC5EAA3822DDD70300C072D1 /* Sources */,
+				CC5EAA3922DDD70300C072D1 /* Frameworks */,
+				CC5EAA3A22DDD70300C072D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC5EAA3E22DDD70300C072D1 /* PBXTargetDependency */,
+			);
+			name = PenzaAutoTests;
+			productName = PenzaAutoTests;
+			productReference = CC5EAA3C22DDD70300C072D1 /* PenzaAutoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC5EAA4622DDD70400C072D1 /* PenzaAutoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC5EAA5622DDD70400C072D1 /* Build configuration list for PBXNativeTarget "PenzaAutoUITests" */;
+			buildPhases = (
+				CC5EAA4322DDD70400C072D1 /* Sources */,
+				CC5EAA4422DDD70400C072D1 /* Frameworks */,
+				CC5EAA4522DDD70400C072D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC5EAA4922DDD70400C072D1 /* PBXTargetDependency */,
+			);
+			name = PenzaAutoUITests;
+			productName = PenzaAutoUITests;
+			productReference = CC5EAA4722DDD70400C072D1 /* PenzaAutoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC5EAA2022DDD6E000C072D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = gitlab;
+				TargetAttributes = {
+					CC5EAA2722DDD6E000C072D1 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					CC5EAA3B22DDD70300C072D1 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CC5EAA2722DDD6E000C072D1;
+					};
+					CC5EAA4622DDD70400C072D1 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = CC5EAA2722DDD6E000C072D1;
+					};
+				};
+			};
+			buildConfigurationList = CC5EAA2322DDD6E000C072D1 /* Build configuration list for PBXProject "PenzaAuto" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC5EAA1F22DDD6E000C072D1;
+			productRefGroup = CC5EAA2922DDD6E000C072D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC5EAA2722DDD6E000C072D1 /* PenzaAuto */,
+				CC5EAA3B22DDD70300C072D1 /* PenzaAutoTests */,
+				CC5EAA4622DDD70400C072D1 /* PenzaAutoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC5EAA2622DDD6E000C072D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC9A20AB22E200E100309E6F /* ViewController.xib in Resources */,
+				CC9DF70422DF1B6000534E24 /* Podfile in Resources */,
+				CC5EAA3622DDD70300C072D1 /* LaunchScreen.storyboard in Resources */,
+				CC5EAA3322DDD70300C072D1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC5EAA3A22DDD70300C072D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC9A20AC22E200E100309E6F /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC5EAA4522DDD70400C072D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC9A20AD22E200E100309E6F /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CAD483E95A4CA211288BBCBC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PenzaAuto/Pods-PenzaAuto-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PenzaAuto/Pods-PenzaAuto-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PenzaAuto/Pods-PenzaAuto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E510280B27FD83800A14773D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PenzaAuto-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC5EAA2422DDD6E000C072D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCB445BF22E1F20A0097928C /* LoginPresenter.swift in Sources */,
+				CCB445C122E1F2180097928C /* LoginModel.swift in Sources */,
+				CC5EAA2E22DDD6E100C072D1 /* ViewController.swift in Sources */,
+				CC5EAA2C22DDD6E100C072D1 /* AppDelegate.swift in Sources */,
+				CCB445C322E1F2330097928C /* NetWork.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC5EAA3822DDD70300C072D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC5EAA4122DDD70300C072D1 /* PenzaAutoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC5EAA4322DDD70400C072D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC5EAA4C22DDD70400C072D1 /* PenzaAutoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC5EAA3E22DDD70300C072D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC5EAA2722DDD6E000C072D1 /* PenzaAuto */;
+			targetProxy = CC5EAA3D22DDD70300C072D1 /* PBXContainerItemProxy */;
+		};
+		CC5EAA4922DDD70400C072D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC5EAA2722DDD6E000C072D1 /* PenzaAuto */;
+			targetProxy = CC5EAA4822DDD70400C072D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC5EAA3422DDD70300C072D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC5EAA3522DDD70300C072D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC5EAA4E22DDD70400C072D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC5EAA4F22DDD70400C072D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC5EAA5122DDD70400C072D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6457FC38B6FBDC4035174295 /* Pods-PenzaAuto.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PenzaAuto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ternovka.PenzaAuto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC5EAA5222DDD70400C072D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6D5BB9177B669E022BFFA4E /* Pods-PenzaAuto.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PenzaAuto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ternovka.PenzaAuto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CC5EAA5422DDD70400C072D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PenzaAutoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ternovka.PenzaAutoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PenzaAuto.app/PenzaAuto";
+			};
+			name = Debug;
+		};
+		CC5EAA5522DDD70400C072D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PenzaAutoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ternovka.PenzaAutoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PenzaAuto.app/PenzaAuto";
+			};
+			name = Release;
+		};
+		CC5EAA5722DDD70400C072D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PenzaAutoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ternovka.PenzaAutoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PenzaAuto;
+			};
+			name = Debug;
+		};
+		CC5EAA5822DDD70400C072D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PenzaAutoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ternovka.PenzaAutoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PenzaAuto;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC5EAA2322DDD6E000C072D1 /* Build configuration list for PBXProject "PenzaAuto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC5EAA4E22DDD70400C072D1 /* Debug */,
+				CC5EAA4F22DDD70400C072D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC5EAA5022DDD70400C072D1 /* Build configuration list for PBXNativeTarget "PenzaAuto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC5EAA5122DDD70400C072D1 /* Debug */,
+				CC5EAA5222DDD70400C072D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC5EAA5322DDD70400C072D1 /* Build configuration list for PBXNativeTarget "PenzaAutoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC5EAA5422DDD70400C072D1 /* Debug */,
+				CC5EAA5522DDD70400C072D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC5EAA5622DDD70400C072D1 /* Build configuration list for PBXNativeTarget "PenzaAutoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC5EAA5722DDD70400C072D1 /* Debug */,
+				CC5EAA5822DDD70400C072D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC5EAA2022DDD6E000C072D1 /* Project object */;
+}
