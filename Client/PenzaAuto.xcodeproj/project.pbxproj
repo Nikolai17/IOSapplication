@@ -164,9 +164,9 @@
 			children = (
 				CCB445C222E1F2330097928C /* NetWork.swift */,
 				CC5EAA2D22DDD6E100C072D1 /* ViewController.swift */,
-				CC9A20AA22E200E100309E6F /* ViewController.xib */,
-				CCB445C022E1F2180097928C /* LoginModel.swift */,
 				CCB445BE22E1F20A0097928C /* LoginPresenter.swift */,
+				CCB445C022E1F2180097928C /* LoginModel.swift */,
+				CC9A20AA22E200E100309E6F /* ViewController.xib */,
 			);
 			path = LoginController;
 			sourceTree = "<group>";

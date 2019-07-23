@@ -23,40 +23,23 @@ class LoginPresenter {
         self.view = view
         self.model = model
     }
-    
-    func LoginButtonPressed() {
-        if view.LoginTextField?.text != nil && view.PassTextFieldLogin?.text != nil {
-            login =  String(view.LoginTextField!.text!)
-            pass = String(view.PassTextFieldLogin!.text!)
+   
+    func loginButtonPressed() {
+        if view.loginTextField?.text != nil && view.passTextFieldLogin?.text != nil {
+            login =  String(view.loginTextField!.text!)
+            pass = String(view.passTextFieldLogin!.text!)
             
         } else { return }
-        let headers = ["Content-Type": "application/x-www-form-urlencoded" ]
-        let url = "http://localhost:4567/post"
         
-        if login != nil && pass != nil {
-            request(url,
-                    method: .post,
-                    parameters: ["login": login, "pass": "True"]).responseJSON
-                { response in
-                    if String(describing: response.result) == "SUCCESS" {
-                        let result = response.result.value
-                        let JSON = result as! NSDictionary
-                        
-                        if JSON == ["Volnikov":"True"] && self.pass == self.model.keyValue {
-                            self.printText = "Вы  авторизованы!"
-                        } else if JSON == ["Volnikov":"True"] && self.pass != self.model.keyValue {
-                           self.printText = "Неверный пароль!"
-                        }
-                        if JSON == ["Fail":"Fail"] {
-                            self.printText = "Не верный логин и пароль!"
-                        }
-                    } else  {
-                       self.printText = "Нет подключения к серверу!"
-                        print(response)
-                    }
-            }
+        printText =  model.loginButtonModel(login: login, pass: pass)
+        view.setWarninigText(printText)
+        //view.gotoNextScreen()
+   
         }
-        
-      
-    }
+    
+ 
+    
+
+
 }
+
