@@ -11,9 +11,5 @@ import Foundation
 class LoginModel {
     
     var keyValue = "1234"
-//    struct Autorization: Codable {
-//        var login: String
-//        var pass: String
-//    }
-    
+
 }

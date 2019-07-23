@@ -10,7 +10,6 @@ import Foundation
 import Alamofire
 
 class NetWork: ViewController {
-  
-
+ 
 }
 

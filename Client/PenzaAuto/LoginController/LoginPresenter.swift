@@ -24,9 +24,6 @@ class LoginPresenter {
         self.model = model
     }
     
-    
-    
-    
     func LoginButtonPressed() {
         if view.LoginTextField?.text != nil && view.PassTextFieldLogin?.text != nil {
             login =  String(view.LoginTextField!.text!)
