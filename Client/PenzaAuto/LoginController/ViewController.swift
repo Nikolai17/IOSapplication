@@ -11,28 +11,30 @@ import Alamofire
 
 class ViewController: UIViewController {
     
+  
     @IBOutlet weak var LoginTextField: UITextField!
     @IBOutlet weak var PassTextFieldLogin: UITextField!
     @IBOutlet weak var Output: UILabel!
     
-    struct Autorization: Codable {
-        var login: String
-        var pass: String
-        
-    }
+    var presenter: LoginPresenter!
   
     @IBAction func LoginButton(_ sender: Any) {
+
+        presenter.LoginButtonPressed()
+        Output.text = presenter.printText
+      
+//        if let nc = navigationController {
+//            let vc = ViewController(nibName: "ViewController", bundle: nil)
+//            nc.pushViewController(vc, animated: true)
+//        }
+
         
-        if let nc = navigationController {
-            let vc = ViewController(nibName: "ViewController", bundle: nil)
-            nc.pushViewController(vc, animated: true)
-        }
- 
+         
 //        let headers = ["Content-Type": "application/x-www-form-urlencoded" ]
 //        let url = "http://localhost:4567/post"
 //        if LoginTextField.text != nil && PassTextFieldLogin.text != nil {
 //        request(url,
-//                method: .post,
+//                method: .post,/Users/gitlab/Desktop/RenCredit_Developer_Profile.mobileprovision
 //                parameters: ["login": String(LoginTextField.text!), "pass": "True"]).responseJSON
 //            { response in
 //                if String(describing: response.result) == "SUCCESS" {
@@ -57,13 +59,13 @@ class ViewController: UIViewController {
     }
 
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
     
-    
-
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.presenter = LoginPresenter(view: self, model: LoginModel())
     }
 
 

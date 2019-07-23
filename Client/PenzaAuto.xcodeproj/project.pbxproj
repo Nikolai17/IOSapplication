@@ -133,11 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				CC5EAA2B22DDD6E100C072D1 /* AppDelegate.swift */,
-				CC5EAA2D22DDD6E100C072D1 /* ViewController.swift */,
-				CC9A20AA22E200E100309E6F /* ViewController.xib */,
-				CCB445C022E1F2180097928C /* LoginModel.swift */,
-				CCB445C222E1F2330097928C /* NetWork.swift */,
-				CCB445BE22E1F20A0097928C /* LoginPresenter.swift */,
+				CCF7CFC422E5D062003C82AD /* LoginController */,
 				CC5EAA3222DDD70300C072D1 /* Assets.xcassets */,
 				CC5EAA3422DDD70300C072D1 /* LaunchScreen.storyboard */,
 				CC5EAA3722DDD70300C072D1 /* Info.plist */,
@@ -161,6 +157,18 @@
 				CC5EAA4D22DDD70400C072D1 /* Info.plist */,
 			);
 			path = PenzaAutoUITests;
+			sourceTree = "<group>";
+		};
+		CCF7CFC422E5D062003C82AD /* LoginController */ = {
+			isa = PBXGroup;
+			children = (
+				CCB445C222E1F2330097928C /* NetWork.swift */,
+				CC5EAA2D22DDD6E100C072D1 /* ViewController.swift */,
+				CC9A20AA22E200E100309E6F /* ViewController.xib */,
+				CCB445C022E1F2180097928C /* LoginModel.swift */,
+				CCB445BE22E1F20A0097928C /* LoginPresenter.swift */,
+			);
+			path = LoginController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
