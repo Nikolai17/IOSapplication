@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PenzaAuto/LoginController/ViewController.swift"
-            timestampString = "585503802.666705"
+            filePath = "PenzaAuto/LoginController/LoginPresenter.swift"
+            timestampString = "585664398.485381"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
             endingLineNumber = "23"
-            landmarkName = "LoginButton(_:)"
+            landmarkName = "init(view:model:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PenzaAuto/LoginController/LoginPresenter.swift"
-            timestampString = "585503802.667173"
+            timestampString = "585664398.485455"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "LoginButtonPressed()"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "loginButtonPressed()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,13 +42,141 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PenzaAuto/LoginController/LoginPresenter.swift"
-            timestampString = "585503802.667233"
+            timestampString = "585664398.48551"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "LoginButtonPressed()"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "init(view:model:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PenzaAuto/LoginController/LoginPresenter.swift"
+            timestampString = "585664398.485563"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "init(view:model:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PenzaAuto/LoginController/LoginPresenter.swift"
+            timestampString = "585664398.485613"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "LoginPresenter"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PenzaAuto/LoginController/LoginPresenter.swift"
+            timestampString = "585664398.4856631"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "LoginPresenter"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PenzaAuto.LoginPresenter.__allocating_init(view: PenzaAuto.ViewController, model: PenzaAuto.LoginModel) -&gt; PenzaAuto.LoginPresenter"
+                  moduleName = "PenzaAuto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gitlab/Work/volinkov/Client/PenzaAuto/LoginController/LoginPresenter.swift"
+                  timestampString = "585573367.710373"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PenzaAuto.LoginPresenter.init(view: PenzaAuto.ViewController, model: PenzaAuto.LoginModel) -&gt; PenzaAuto.LoginPresenter"
+                  moduleName = "PenzaAuto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gitlab/Work/volinkov/Client/PenzaAuto/LoginController/LoginPresenter.swift"
+                  timestampString = "585573367.713833"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "49">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PenzaAuto/LoginController/LoginPresenter.swift"
+            timestampString = "585664398.4857121"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "init(view:model:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PenzaAuto.LoginPresenter.__allocating_init(view: PenzaAuto.ViewController, model: PenzaAuto.LoginModel) -&gt; PenzaAuto.LoginPresenter"
+                  moduleName = "PenzaAuto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gitlab/Work/volinkov/Client/PenzaAuto/LoginController/LoginPresenter.swift"
+                  timestampString = "585573368.067289"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PenzaAuto.LoginPresenter.init(view: PenzaAuto.ViewController, model: PenzaAuto.LoginModel) -&gt; PenzaAuto.LoginPresenter"
+                  moduleName = "PenzaAuto"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gitlab/Work/volinkov/Client/PenzaAuto/LoginController/LoginPresenter.swift"
+                  timestampString = "585573368.070834"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "49">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

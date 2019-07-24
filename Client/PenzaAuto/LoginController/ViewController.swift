@@ -7,31 +7,30 @@
 //
 
 import UIKit
-import Alamofire
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var LoginTextField: UITextField!
-    @IBOutlet weak var PassTextFieldLogin: UITextField!
-    @IBOutlet weak var Output: UILabel!
+    @IBOutlet weak var loginTextField: UITextField!
+    @IBOutlet weak var passTextFieldLogin: UITextField!
+    @IBOutlet weak var outPutLabel: UILabel!
     
     var presenter: LoginPresenter!
   
     @IBAction func LoginButton(_ sender: Any) {
 
-        presenter.LoginButtonPressed()
-        Output.text = presenter.printText
-      
+        presenter.loginButtonPressed()
+        outPutLabel.text = presenter.printText
         if let nc = navigationController {
             let vc = ViewController(nibName: "ViewController", bundle: nil)
             nc.pushViewController(vc, animated: true)
         }
 
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.presenter = LoginPresenter(view: self, model: LoginModel())
+        
     }
 
 

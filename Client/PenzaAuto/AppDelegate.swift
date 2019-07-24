@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         nc.viewControllers = [vc]
         
-        window?.rootViewController = vc
+        window?.rootViewController = nc
         window?.makeKeyAndVisible()
 
         return true

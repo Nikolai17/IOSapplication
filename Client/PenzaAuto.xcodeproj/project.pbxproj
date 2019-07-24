@@ -19,7 +19,6 @@
 		CC9DF70422DF1B6000534E24 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CC9DF70322DF1B6000534E24 /* Podfile */; };
 		CCB445BF22E1F20A0097928C /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB445BE22E1F20A0097928C /* LoginPresenter.swift */; };
 		CCB445C122E1F2180097928C /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB445C022E1F2180097928C /* LoginModel.swift */; };
-		CCB445C322E1F2330097928C /* NetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB445C222E1F2330097928C /* NetWork.swift */; };
 		FA9A6B7F0BA892B73504FB75 /* Pods_PenzaAuto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DA1308CAD3B48C5EFF9881 /* Pods_PenzaAuto.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +58,6 @@
 		CC9DF70322DF1B6000534E24 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CCB445BE22E1F20A0097928C /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		CCB445C022E1F2180097928C /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
-		CCB445C222E1F2330097928C /* NetWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWork.swift; sourceTree = "<group>"; };
 		D6D5BB9177B669E022BFFA4E /* Pods-PenzaAuto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PenzaAuto.release.xcconfig"; path = "Target Support Files/Pods-PenzaAuto/Pods-PenzaAuto.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,7 +160,6 @@
 		CCF7CFC422E5D062003C82AD /* LoginController */ = {
 			isa = PBXGroup;
 			children = (
-				CCB445C222E1F2330097928C /* NetWork.swift */,
 				CC5EAA2D22DDD6E100C072D1 /* ViewController.swift */,
 				CC9A20AA22E200E100309E6F /* ViewController.xib */,
 				CCB445C022E1F2180097928C /* LoginModel.swift */,
@@ -353,7 +350,6 @@
 				CCB445C122E1F2180097928C /* LoginModel.swift in Sources */,
 				CC5EAA2E22DDD6E100C072D1 /* ViewController.swift in Sources */,
 				CC5EAA2C22DDD6E100C072D1 /* AppDelegate.swift in Sources */,
-				CCB445C322E1F2330097928C /* NetWork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

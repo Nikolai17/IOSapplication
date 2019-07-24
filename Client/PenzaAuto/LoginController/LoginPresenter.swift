@@ -24,38 +24,14 @@ class LoginPresenter {
         self.model = model
     }
     
-    func LoginButtonPressed() {
-        if view.LoginTextField?.text != nil && view.PassTextFieldLogin?.text != nil {
-            login =  String(view.LoginTextField!.text!)
-            pass = String(view.PassTextFieldLogin!.text!)
-            
-        } else { return }
-        let headers = ["Content-Type": "application/x-www-form-urlencoded" ]
-        let url = "http://localhost:4567/post"
+    func loginButtonPressed() {
+        login =  view.loginTextField!.text!
+        pass = view.passTextFieldLogin!.text!
+        model.modelKeyPressed(completion: { (result) -> Void in
+            guard let res = result else { return }
+            self.view.outPutLabel.text = res.getLoginState()
+        }, login: login, pass: pass)
         
-        if login != nil && pass != nil {
-            request(url,
-                    method: .post,
-                    parameters: ["login": login, "pass": "True"]).responseJSON
-                { response in
-                    if String(describing: response.result) == "SUCCESS" {
-                        let result = response.result.value
-                        let JSON = result as! NSDictionary
-                        
-                        if JSON == ["Volnikov":"True"] && self.pass == self.model.keyValue {
-                            self.printText = "Вы  авторизованы!"
-                        } else if JSON == ["Volnikov":"True"] && self.pass != self.model.keyValue {
-                           self.printText = "Неверный пароль!"
-                        }
-                        if JSON == ["Fail":"Fail"] {
-                            self.printText = "Не верный логин и пароль!"
-                        }
-                    } else  {
-                       self.printText = "Нет подключения к серверу!"
-                        print(response)
-                    }
-            }
-        }
         
       
     }
