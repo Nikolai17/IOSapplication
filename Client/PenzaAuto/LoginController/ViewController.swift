@@ -20,16 +20,35 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
         presenter.loginButtonPressed()
         outPutLabel.text = presenter.printText
-        if let nc = navigationController {
-            let vc = ViewController(nibName: "ViewController", bundle: nil)
-            nc.pushViewController(vc, animated: true)
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+         self.navigationController?.isNavigationBarHidden = true
+    }
+    
+    func goToNextScreen(_ temp: String) {
+        if temp == "Вход выполнен успешно" {
+            let newVC = ForumViewController.init(nibName: "ForumViewController", bundle: nil)
+            self.navigationController?.pushViewController(newVC, animated: true)
         }
-
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) -> Bool {
+        print(textField.text)
+        return true
+    }
+    
+    func changeLabel(msg: String) -> String {
+        self.outPutLabel.text = msg
+        return msg
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginTextField.delegate = self
         self.presenter = LoginPresenter(view: self, model: LoginModel())
+       
         
     }
 

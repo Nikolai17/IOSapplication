@@ -24,15 +24,20 @@ class LoginPresenter {
         self.model = model
     }
     
+    
     func loginButtonPressed() {
         login =  view.loginTextField!.text!
         pass = view.passTextFieldLogin!.text!
         model.modelKeyPressed(completion: { (result) -> Void in
             guard let res = result else { return }
-            self.view.outPutLabel.text = res.getLoginState()
+            self.view.changeLabel(msg: res.getLoginState(self.pass))
+            self.view.goToNextScreen(self.view!.outPutLabel.text!)
         }, login: login, pass: pass)
         
+        view.textFieldDidBeginEditing(view.loginTextField)
         
-      
     }
+    
+    
+    
 }
