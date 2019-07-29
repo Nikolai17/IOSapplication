@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow.init(frame: UIScreen.main.bounds)
         
         let nc = UINavigationController()
-        let vc = ViewController.init(nibName: "ViewController", bundle: nil)
+        let vc = ViewController.init(nibName: Consts.nibNameFirstScreen, bundle: nil)
         
         nc.viewControllers = [vc]
         

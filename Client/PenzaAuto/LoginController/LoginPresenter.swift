@@ -7,37 +7,38 @@
 //
 
 import Foundation
-import Alamofire
-
 
 class LoginPresenter {
+    weak var view: ViewController!
+    var model: LoginModel
     
     var login: String = ""
     var pass: String = ""
-    var printText:String = ""
     
-    weak var view: ViewController!
-    var model: LoginModel
     
     init(view: ViewController, model: LoginModel) {
         self.view = view
         self.model = model
     }
-    
-    
+        
     func loginButtonPressed() {
-        login =  view.loginTextField!.text!
-        pass = view.passTextFieldLogin!.text!
+
         model.modelKeyPressed(completion: { (result) -> Void in
             guard let res = result else { return }
-            self.view.changeLabel(msg: res.getLoginState(self.pass))
-            self.view.goToNextScreen(self.view!.outPutLabel.text!)
-        }, login: login, pass: pass)
-        
-        view.textFieldDidBeginEditing(view.loginTextField)
-        
+            self.view.changeLabel(msg: res.getLoginState(self.pass).0)
+            self.view.goToNextScreen(self.view!.outPutLabel.text!, userType: res.getLoginState(self.pass).1 ?? UserType.errorLogin)
+        }, login: login, pass: pass)   
+      
     }
     
+    func passChange(text: String){
+        pass = text
+    }
+    
+    func loginChange(text: String) {
+        login = text
+    }
+
     
     
 }

@@ -17,41 +17,59 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var presenter: LoginPresenter!
   
     @IBAction func LoginButton(_ sender: Any) {
-
         presenter.loginButtonPressed()
-        outPutLabel.text = presenter.printText
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
          self.navigationController?.isNavigationBarHidden = true
     }
     
-    func goToNextScreen(_ temp: String) {
-        if temp == "Вход выполнен успешно" {
-            let newVC = ForumViewController.init(nibName: "ForumViewController", bundle: nil)
+    func goToNextScreen(_ temp: String, userType: UserType) {
+        if temp == Consts.loginSuccessful {
+            let newVC = ForumViewController.init(nibName: Consts.nibNameSecondScreen , bundle: nil)
+            newVC.userType = userType
             self.navigationController?.pushViewController(newVC, animated: true)
+            
         }
-    }
+    }   
+   
     
-    func textFieldDidBeginEditing(_ textField: UITextField) -> Bool {
-        print(textField.text)
-        return true
-    }
-    
-    func changeLabel(msg: String) -> String {
+    func changeLabel(msg: String) {
         self.outPutLabel.text = msg
-        return msg
     }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginTextField.text = Consts.adminName
+        passTextFieldLogin.text = Consts.adminPassword
         loginTextField.delegate = self
+        passTextFieldLogin.delegate = self
         self.presenter = LoginPresenter(view: self, model: LoginModel())
-       
         
     }
-
-
+  
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if let text = textField.text, let range = Range(range, in: text) {
+            let updatedText = text.replacingCharacters(in: range, with: string)
+            switch textField {
+            case loginTextField:
+                presenter.loginChange(text: updatedText)
+            case passTextFieldLogin:
+                presenter.passChange(text: updatedText)
+            default: break
+            }
+            
+        }
+        return true
+    }
+    
 }
+
+        
+
+   
+    
+
+
 

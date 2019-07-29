@@ -19,6 +19,8 @@
 		CC9DF70422DF1B6000534E24 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CC9DF70322DF1B6000534E24 /* Podfile */; };
 		CCB445BF22E1F20A0097928C /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB445BE22E1F20A0097928C /* LoginPresenter.swift */; };
 		CCB445C122E1F2180097928C /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB445C022E1F2180097928C /* LoginModel.swift */; };
+		CCC8263722EF1DF300D31BA2 /* UserTypeRoles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC8263622EF1DF300D31BA2 /* UserTypeRoles.swift */; };
+		CCC8263922EF3B1600D31BA2 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC8263822EF3B1600D31BA2 /* Const.swift */; };
 		CCD3520522E99594002B0475 /* ForumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCD3520422E99594002B0475 /* ForumViewController.xib */; };
 		CCD3520722E99646002B0475 /* ForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD3520622E99646002B0475 /* ForumViewController.swift */; };
 		CCD3520A22E9A9B4002B0475 /* ForumPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD3520922E9A9B4002B0475 /* ForumPresenter.swift */; };
@@ -62,6 +64,8 @@
 		CC9DF70322DF1B6000534E24 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CCB445BE22E1F20A0097928C /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		CCB445C022E1F2180097928C /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		CCC8263622EF1DF300D31BA2 /* UserTypeRoles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTypeRoles.swift; sourceTree = "<group>"; };
+		CCC8263822EF3B1600D31BA2 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		CCD3520422E99594002B0475 /* ForumViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForumViewController.xib; sourceTree = "<group>"; };
 		CCD3520622E99646002B0475 /* ForumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumViewController.swift; sourceTree = "<group>"; };
 		CCD3520922E9A9B4002B0475 /* ForumPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPresenter.swift; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				CC9DF70322DF1B6000534E24 /* Podfile */,
+				CCC8263522EF1DCF00D31BA2 /* Other */,
 				CC5EAA2A22DDD6E000C072D1 /* PenzaAuto */,
 				CC5EAA3F22DDD70300C072D1 /* PenzaAutoTests */,
 				CC5EAA4A22DDD70400C072D1 /* PenzaAutoUITests */,
@@ -164,6 +169,15 @@
 				CC5EAA4D22DDD70400C072D1 /* Info.plist */,
 			);
 			path = PenzaAutoUITests;
+			sourceTree = "<group>";
+		};
+		CCC8263522EF1DCF00D31BA2 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				CCC8263622EF1DF300D31BA2 /* UserTypeRoles.swift */,
+				CCC8263822EF3B1600D31BA2 /* Const.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		CCD3520822E99B0E002B0475 /* ForumController */ = {
@@ -371,9 +385,11 @@
 				CCB445BF22E1F20A0097928C /* LoginPresenter.swift in Sources */,
 				CCB445C122E1F2180097928C /* LoginModel.swift in Sources */,
 				CCD3520722E99646002B0475 /* ForumViewController.swift in Sources */,
+				CCC8263722EF1DF300D31BA2 /* UserTypeRoles.swift in Sources */,
 				CCD3520C22E9A9C1002B0475 /* ForumModel.swift in Sources */,
 				CC5EAA2E22DDD6E100C072D1 /* ViewController.swift in Sources */,
 				CC5EAA2C22DDD6E100C072D1 /* AppDelegate.swift in Sources */,
+				CCC8263922EF3B1600D31BA2 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

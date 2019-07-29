@@ -10,38 +10,35 @@ import Foundation
 import Alamofire
 
 extension Dictionary {
-    func getLoginState(_ pass: String) -> String {
+    func getLoginState(_ pass: String) -> (String, UserType?) {
         switch self as? [String: String] {
-        case ["Volnikov" : "True"]:
-            return pass == "1234" ? "Вход выполнен успешно" : "Введен некорректный пароль"
-        default: return "Ошибка входа"
+        case [Consts.adminName : Consts.nameTrue]:
+            if pass == Consts.adminPassword {
+                UserName = Consts.adminName
+                return (Consts.loginSuccessful, UserType.admin)
+            } else {
+                return (Consts.incorrectPasswordEntered, nil)
+            }
+        case [Consts.userName : Consts.nameTrue]:
+            if pass == Consts.userPassword {
+                UserName = Consts.userName
+                return (Consts.loginSuccessful, UserType.user)
+            } else {
+                return (Consts.incorrectPasswordEntered, nil)
+            }
+        default: return (Consts.loginFailed, nil)
         }
-    }
-    
+    }    
 }
 
 class LoginModel {
     
-    enum Users {
-        case admin
-        case ussally
-    }
-    
-    func typeUser(_ login: String ,_ pass: String) -> Any {
-        if login == "Volnikov" && pass == "1234" {
-           return Users.admin
-        } else { return Users.ussally }
-    }
-    
-    static var keyValue = "123"
-    var temp: String = ""
-    
     func modelKeyPressed(completion: @escaping([String : String]?) -> Void, login: String, pass: String) {
-        let url = "http://localhost:4567/post"
+        let url = Consts.nameLocalHost
         request(url,
                 method: .post,
-                parameters: ["login": login, "pass": "True"]).responseJSON { response in
-                    if String(describing: response.result) == "SUCCESS" {
+                parameters: [Consts.nameLogin: login, Consts.namePassword: Consts.nameTrue]).responseJSON { response in
+                    if String(describing: response.result) == Consts.nameSUCCESS {
                         let result = response.result.value
                         guard let JSON = result as? [String : String] else { return }
                         completion(JSON)

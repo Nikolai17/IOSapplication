@@ -9,5 +9,21 @@
 import Foundation
 
 class ForumPresenter {
+    weak var view: ForumViewController!
+    var model: ForumModel
     
+    init(view: ForumViewController, model: ForumModel) {
+        self.view = view
+        self.model = model
+    }
+  
+    func captureForImage(userType: UserType) {
+        switch userType  {
+        case .admin:
+            view.navigationLeftButtonImageAdmin()            
+        case .user:
+            view.navigationLeftButtonImageUsers()
+        default: break
+        }
+    }
 }
