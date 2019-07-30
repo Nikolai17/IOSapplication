@@ -4,6 +4,16 @@
    <FileRef
       location = "group:PenzaAuto.xcodeproj">
    </FileRef>
+   <Group
+      location = "group:/Users/gitlab/Work/volinkov/Client/RegController"
+      name = "RegController">
+      <FileRef
+         location = "group:RegController/Regestration.xib">
+      </FileRef>
+      <FileRef
+         location = "group:RegController/RegestrationViewController.swift">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>

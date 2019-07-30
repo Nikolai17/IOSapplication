@@ -20,9 +20,9 @@ class ForumPresenter {
     func captureForImage(userType: UserType) {
         switch userType  {
         case .admin:
-            view.navigationLeftButtonImageAdmin()            
+            view.navigationLeftButtonImage(Consts.stringAdmin)
         case .user:
-            view.navigationLeftButtonImageUsers()
+            view.navigationLeftButtonImage(Consts.stringUsers)
         default: break
         }
     }

@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
+    @IBOutlet weak var signButton: UIButton!
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passTextFieldLogin: UITextField!
     @IBOutlet weak var outPutLabel: UILabel!
@@ -33,6 +34,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }   
    
+    @IBAction func signButtonAction(_ sender: Any) {
+        
+        let newVC = RegestrationViewController.init(nibName: Consts.nibNameRegScreen , bundle: nil)
+       
+        self.navigationController?.pushViewController(newVC, animated: true)
+    }
+    
     
     func changeLabel(msg: String) {
         self.outPutLabel.text = msg

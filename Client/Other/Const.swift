@@ -29,4 +29,5 @@ enum Consts {
     static let cgrectHeight = 50
     static let stringAdmin = "admin"
     static let stringUsers = "users"
+    static let nibNameRegScreen = "Regestration"
 }
