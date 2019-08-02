@@ -35,9 +35,10 @@ class LoginModel {
     
     func modelKeyPressed(completion: @escaping([String : String]?) -> Void, login: String, pass: String) {
         let url = Consts.nameLocalHost
+        let parameters = [Consts.nameLogin: login, Consts.namePassword: pass]
         request(url,
                 method: .post,
-                parameters: [Consts.nameLogin: login, Consts.namePassword: Consts.nameTrue]).responseJSON { response in
+                parameters: parameters).responseJSON { response in
                     if String(describing: response.result) == Consts.nameSUCCESS {
                         let result = response.result.value
                         guard let JSON = result as? [String : String] else { return }

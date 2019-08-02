@@ -35,15 +35,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }   
    
     @IBAction func signButtonAction(_ sender: Any) {
-        
-        let newVC = RegestrationViewController.init(nibName: Consts.nibNameRegScreen , bundle: nil)
-       
-        self.navigationController?.pushViewController(newVC, animated: true)
+        if let nc = self.navigationController {            
+            RegestrationViewController.startRegView(NC: nc, prevVC: self)
+        }
     }
     
     
     func changeLabel(msg: String) {
         self.outPutLabel.text = msg
+    }
+    
+    func setLogFields(log: String, pass: String) {
+        
     }
     
     

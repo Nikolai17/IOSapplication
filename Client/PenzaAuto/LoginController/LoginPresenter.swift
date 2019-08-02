@@ -12,8 +12,8 @@ class LoginPresenter {
     weak var view: ViewController!
     var model: LoginModel
     
-    var login: String = ""
-    var pass: String = ""
+    var login: String = "Volnikov"
+    var pass: String = "1234"
     
     
     init(view: ViewController, model: LoginModel) {

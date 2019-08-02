@@ -23,6 +23,7 @@ enum Consts {
     static let namePassword = "pass"
     static let nameSUCCESS = "SUCCESS"
     static let nameLocalHost = "http://localhost:4567/post"
+    static let getTopicsUrl = "http://localhost:4567/getTopics"
     static let cgrectX = 0
     static let cgrectY = 0
     static let cgrectWight = 50

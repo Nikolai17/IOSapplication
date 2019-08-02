@@ -17,6 +17,9 @@
 		CC9A20AC22E200E100309E6F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC9A20AA22E200E100309E6F /* ViewController.xib */; };
 		CC9A20AD22E200E100309E6F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC9A20AA22E200E100309E6F /* ViewController.xib */; };
 		CC9DF70422DF1B6000534E24 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CC9DF70322DF1B6000534E24 /* Podfile */; };
+		CCA8996B22F2D2E500213B71 /* Tema.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA8996A22F2D2E500213B71 /* Tema.swift */; };
+		CCA8997122F2E12800213B71 /* AddTopicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA8997022F2E12800213B71 /* AddTopicVC.swift */; };
+		CCA8997322F2F65100213B71 /* AddTopic.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA8997222F2F65100213B71 /* AddTopic.xib */; };
 		CCACC5C922F0476100169704 /* Pods_PenzaAuto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DA1308CAD3B48C5EFF9881 /* Pods_PenzaAuto.framework */; };
 		CCACC5CA22F0476100169704 /* Pods_PenzaAuto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19DA1308CAD3B48C5EFF9881 /* Pods_PenzaAuto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CCACC5CD22F047B000169704 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCACC5CC22F047B000169704 /* XCTest.framework */; };
@@ -24,12 +27,19 @@
 		CCACC5D122F05B9400169704 /* RegestrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCACC5D022F05B9400169704 /* RegestrationViewController.swift */; };
 		CCB445BF22E1F20A0097928C /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB445BE22E1F20A0097928C /* LoginPresenter.swift */; };
 		CCB445C122E1F2180097928C /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB445C022E1F2180097928C /* LoginModel.swift */; };
+		CCBCC30C22F450C900925ACD /* AddModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBCC30B22F450C900925ACD /* AddModel.swift */; };
+		CCBCC30E22F450DC00925ACD /* AddPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBCC30D22F450DC00925ACD /* AddPresenter.swift */; };
 		CCC8263722EF1DF300D31BA2 /* UserTypeRoles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC8263622EF1DF300D31BA2 /* UserTypeRoles.swift */; };
 		CCC8263922EF3B1600D31BA2 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC8263822EF3B1600D31BA2 /* Const.swift */; };
 		CCD3520522E99594002B0475 /* ForumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCD3520422E99594002B0475 /* ForumViewController.xib */; };
 		CCD3520722E99646002B0475 /* ForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD3520622E99646002B0475 /* ForumViewController.swift */; };
 		CCD3520A22E9A9B4002B0475 /* ForumPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD3520922E9A9B4002B0475 /* ForumPresenter.swift */; };
 		CCD3520C22E9A9C1002B0475 /* ForumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD3520B22E9A9C1002B0475 /* ForumModel.swift */; };
+		CCD8960522F186E50079483B /* RegPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD8960422F186E50079483B /* RegPresenter.swift */; };
+		CCD8960922F187330079483B /* RegModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD8960822F187330079483B /* RegModel.swift */; };
+		CCD8960B22F18C4E0079483B /* DataRegForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD8960A22F18C4E0079483B /* DataRegForm.swift */; };
+		CCD8961422F1B8A30079483B /* AvtoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD8961222F1B8A30079483B /* AvtoTableViewCell.swift */; };
+		CCD8961522F1B8A30079483B /* AvtoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCD8961322F1B8A30079483B /* AvtoTableViewCell.xib */; };
 		FA9A6B7F0BA892B73504FB75 /* Pods_PenzaAuto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DA1308CAD3B48C5EFF9881 /* Pods_PenzaAuto.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,18 +91,28 @@
 		CC5EAA4D22DDD70400C072D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC9A20AA22E200E100309E6F /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		CC9DF70322DF1B6000534E24 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CCA8996A22F2D2E500213B71 /* Tema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tema.swift; sourceTree = "<group>"; };
+		CCA8997022F2E12800213B71 /* AddTopicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTopicVC.swift; sourceTree = "<group>"; };
+		CCA8997222F2F65100213B71 /* AddTopic.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTopic.xib; sourceTree = "<group>"; };
 		CCACC5C522F046FD00169704 /* Pods_PenzaAuto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_PenzaAuto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCACC5CC22F047B000169704 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CCACC5CE22F05B2100169704 /* Regestration.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Regestration.xib; sourceTree = "<group>"; };
 		CCACC5D022F05B9400169704 /* RegestrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegestrationViewController.swift; sourceTree = "<group>"; };
 		CCB445BE22E1F20A0097928C /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		CCB445C022E1F2180097928C /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		CCBCC30B22F450C900925ACD /* AddModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddModel.swift; sourceTree = "<group>"; };
+		CCBCC30D22F450DC00925ACD /* AddPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPresenter.swift; sourceTree = "<group>"; };
 		CCC8263622EF1DF300D31BA2 /* UserTypeRoles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTypeRoles.swift; sourceTree = "<group>"; };
 		CCC8263822EF3B1600D31BA2 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		CCD3520422E99594002B0475 /* ForumViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForumViewController.xib; sourceTree = "<group>"; };
 		CCD3520622E99646002B0475 /* ForumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumViewController.swift; sourceTree = "<group>"; };
 		CCD3520922E9A9B4002B0475 /* ForumPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPresenter.swift; sourceTree = "<group>"; };
 		CCD3520B22E9A9C1002B0475 /* ForumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumModel.swift; sourceTree = "<group>"; };
+		CCD8960422F186E50079483B /* RegPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegPresenter.swift; sourceTree = "<group>"; };
+		CCD8960822F187330079483B /* RegModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegModel.swift; sourceTree = "<group>"; };
+		CCD8960A22F18C4E0079483B /* DataRegForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRegForm.swift; sourceTree = "<group>"; };
+		CCD8961222F1B8A30079483B /* AvtoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvtoTableViewCell.swift; sourceTree = "<group>"; };
+		CCD8961322F1B8A30079483B /* AvtoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvtoTableViewCell.xib; sourceTree = "<group>"; };
 		D6D5BB9177B669E022BFFA4E /* Pods-PenzaAuto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PenzaAuto.release.xcconfig"; path = "Target Support Files/Pods-PenzaAuto/Pods-PenzaAuto.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +167,7 @@
 			children = (
 				CCACC5C522F046FD00169704 /* Pods_PenzaAuto.framework */,
 				CC9DF70322DF1B6000534E24 /* Podfile */,
+				CC5EAA2B22DDD6E100C072D1 /* AppDelegate.swift */,
 				CCC8263522EF1DCF00D31BA2 /* Other */,
 				CC5EAA2A22DDD6E000C072D1 /* PenzaAuto */,
 				CC5EAA3F22DDD70300C072D1 /* PenzaAutoTests */,
@@ -170,7 +191,7 @@
 		CC5EAA2A22DDD6E000C072D1 /* PenzaAuto */ = {
 			isa = PBXGroup;
 			children = (
-				CC5EAA2B22DDD6E100C072D1 /* AppDelegate.swift */,
+				CCA8996D22F2E0ED00213B71 /* addTems */,
 				CCACC5D222F0649F00169704 /* RegController */,
 				CCD3520822E99B0E002B0475 /* ForumController */,
 				CCF7CFC422E5D062003C82AD /* LoginController */,
@@ -199,11 +220,24 @@
 			path = PenzaAutoUITests;
 			sourceTree = "<group>";
 		};
+		CCA8996D22F2E0ED00213B71 /* addTems */ = {
+			isa = PBXGroup;
+			children = (
+				CCA8997022F2E12800213B71 /* AddTopicVC.swift */,
+				CCBCC30D22F450DC00925ACD /* AddPresenter.swift */,
+				CCBCC30B22F450C900925ACD /* AddModel.swift */,
+				CCA8997222F2F65100213B71 /* AddTopic.xib */,
+			);
+			path = addTems;
+			sourceTree = "<group>";
+		};
 		CCACC5D222F0649F00169704 /* RegController */ = {
 			isa = PBXGroup;
 			children = (
 				CCACC5CE22F05B2100169704 /* Regestration.xib */,
 				CCACC5D022F05B9400169704 /* RegestrationViewController.swift */,
+				CCD8960822F187330079483B /* RegModel.swift */,
+				CCD8960422F186E50079483B /* RegPresenter.swift */,
 			);
 			path = RegController;
 			sourceTree = "<group>";
@@ -213,6 +247,7 @@
 			children = (
 				CCC8263622EF1DF300D31BA2 /* UserTypeRoles.swift */,
 				CCC8263822EF3B1600D31BA2 /* Const.swift */,
+				CCD8960A22F18C4E0079483B /* DataRegForm.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -222,6 +257,9 @@
 			children = (
 				CCD3520422E99594002B0475 /* ForumViewController.xib */,
 				CCD3520622E99646002B0475 /* ForumViewController.swift */,
+				CCD8961222F1B8A30079483B /* AvtoTableViewCell.swift */,
+				CCA8996A22F2D2E500213B71 /* Tema.swift */,
+				CCD8961322F1B8A30079483B /* AvtoTableViewCell.xib */,
 				CCD3520922E9A9B4002B0475 /* ForumPresenter.swift */,
 				CCD3520B22E9A9C1002B0475 /* ForumModel.swift */,
 			);
@@ -349,8 +387,10 @@
 				CCD3520522E99594002B0475 /* ForumViewController.xib in Resources */,
 				CC9A20AB22E200E100309E6F /* ViewController.xib in Resources */,
 				CC9DF70422DF1B6000534E24 /* Podfile in Resources */,
+				CCD8961522F1B8A30079483B /* AvtoTableViewCell.xib in Resources */,
 				CC5EAA3622DDD70300C072D1 /* LaunchScreen.storyboard in Resources */,
 				CCACC5CF22F05B2100169704 /* Regestration.xib in Resources */,
+				CCA8997322F2F65100213B71 /* AddTopic.xib in Resources */,
 				CC5EAA3322DDD70300C072D1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,12 +460,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCBCC30E22F450DC00925ACD /* AddPresenter.swift in Sources */,
+				CCD8960922F187330079483B /* RegModel.swift in Sources */,
 				CCD3520A22E9A9B4002B0475 /* ForumPresenter.swift in Sources */,
+				CCA8996B22F2D2E500213B71 /* Tema.swift in Sources */,
 				CCB445BF22E1F20A0097928C /* LoginPresenter.swift in Sources */,
+				CCD8961422F1B8A30079483B /* AvtoTableViewCell.swift in Sources */,
 				CCB445C122E1F2180097928C /* LoginModel.swift in Sources */,
+				CCD8960522F186E50079483B /* RegPresenter.swift in Sources */,
+				CCBCC30C22F450C900925ACD /* AddModel.swift in Sources */,
 				CCD3520722E99646002B0475 /* ForumViewController.swift in Sources */,
 				CCACC5D122F05B9400169704 /* RegestrationViewController.swift in Sources */,
 				CCC8263722EF1DF300D31BA2 /* UserTypeRoles.swift in Sources */,
+				CCA8997122F2E12800213B71 /* AddTopicVC.swift in Sources */,
+				CCD8960B22F18C4E0079483B /* DataRegForm.swift in Sources */,
 				CCD3520C22E9A9C1002B0475 /* ForumModel.swift in Sources */,
 				CC5EAA2E22DDD6E100C072D1 /* ViewController.swift in Sources */,
 				CC5EAA2C22DDD6E100C072D1 /* AppDelegate.swift in Sources */,
