@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddTems" customModule="PenzaAuto" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddTopicVC" customModule="PenzaAuto" customModuleProvider="target">
             <connections>
                 <outlet property="authorName" destination="uor-Gx-0PR" id="Z6F-3k-hGR"/>
                 <outlet property="authorTextField" destination="k17-BL-j4r" id="YfW-53-Q7b"/>
@@ -62,17 +62,9 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxz-0z-7I6">
-                    <rect key="frame" x="16" y="397" width="288" height="30"/>
-                    <state key="normal" title="Ок"/>
-                    <connections>
-                        <action selector="DoneButton:" destination="-1" eventType="touchUpInside" id="3E5-Ln-n8B"/>
-                    </connections>
-                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="q0k-tN-prZ" firstAttribute="trailing" secondItem="Nxz-0z-7I6" secondAttribute="trailing" constant="16" id="2If-v4-19b"/>
                 <constraint firstItem="uor-Gx-0PR" firstAttribute="top" secondItem="MBb-Hs-yIs" secondAttribute="bottom" constant="32" id="2ej-Um-NXn"/>
                 <constraint firstItem="ORF-lG-0a6" firstAttribute="leading" secondItem="q0k-tN-prZ" secondAttribute="leading" constant="16" id="3Sf-si-XBr"/>
                 <constraint firstItem="MBb-Hs-yIs" firstAttribute="top" secondItem="x3n-aE-qtg" secondAttribute="bottom" constant="32" id="9Be-cU-cOz"/>
@@ -86,16 +78,14 @@
                 <constraint firstItem="q0k-tN-prZ" firstAttribute="trailing" secondItem="k17-BL-j4r" secondAttribute="trailing" constant="16" id="VNp-A3-GEr"/>
                 <constraint firstItem="x3n-aE-qtg" firstAttribute="top" secondItem="q0k-tN-prZ" secondAttribute="top" constant="32" id="X7O-j1-aru"/>
                 <constraint firstItem="uvT-Kl-2z5" firstAttribute="leading" secondItem="q0k-tN-prZ" secondAttribute="leading" constant="16" id="XgP-uj-26b"/>
-                <constraint firstItem="Nxz-0z-7I6" firstAttribute="top" secondItem="uvT-Kl-2z5" secondAttribute="bottom" constant="32" id="bdX-c3-wsN"/>
                 <constraint firstItem="q0k-tN-prZ" firstAttribute="trailing" secondItem="uvT-Kl-2z5" secondAttribute="trailing" constant="16" id="gko-7d-SGb"/>
                 <constraint firstItem="k17-BL-j4r" firstAttribute="leading" secondItem="q0k-tN-prZ" secondAttribute="leading" constant="16" id="ilS-nX-deW"/>
                 <constraint firstItem="q0k-tN-prZ" firstAttribute="trailing" secondItem="ORF-lG-0a6" secondAttribute="trailing" constant="16" id="n35-gG-fbI"/>
                 <constraint firstItem="uvT-Kl-2z5" firstAttribute="top" secondItem="ORF-lG-0a6" secondAttribute="bottom" constant="32" id="t1E-SQ-y2p"/>
                 <constraint firstItem="q0k-tN-prZ" firstAttribute="trailing" secondItem="x3n-aE-qtg" secondAttribute="trailing" constant="16" id="vff-Zh-mf2"/>
-                <constraint firstItem="Nxz-0z-7I6" firstAttribute="leading" secondItem="q0k-tN-prZ" secondAttribute="leading" constant="16" id="xaQ-HD-Dwu"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="q0k-tN-prZ"/>
-            <point key="canvasLocation" x="40.799999999999997" y="46.326836581709152"/>
+            <point key="canvasLocation" x="-221" y="-85"/>
         </view>
     </objects>
 </document>

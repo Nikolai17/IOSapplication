@@ -16,8 +16,8 @@ class AddModel {
         let params = ["topicName": topicName,
                       "authorName": authorName,
                       "ratingPlus" : "\(ratingPlus)",
-            "ratingMinus" : "\(ratingMinus)",
-            "decription" : description]
+                      "ratingMinus" : "\(ratingMinus)",
+                      "decription" : description]
         request(url,
                 method: .post,
                 parameters: params).responseJSON { response in

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class AddTems: UIViewController {
+class AddTopicVC: UIViewController {
     weak var prevVC: ForumViewController!
     var presenter: AddPresenter!
     
@@ -21,26 +21,24 @@ class AddTems: UIViewController {
     @IBOutlet weak var topicTextField: UITextField!
     @IBOutlet weak var authorTextField: UITextField!
     
-    @IBAction func DoneButton(_ sender: Any) {
-       prevVC.tems.append(Topic.init(topicName: topicTextField.text!, authorName: authorTextField.text!, ratingPlus: 44, ratingMinus: 33, description: descriptionTextField.text!, lock: UIImage(named: "closedLock")!))
-        
-        presenter.pressButton()
-        
-        prevVC.tableView.reloadData()
-        navigationController?.popViewController(animated: true)
-        
-    }
   
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Создание темы"
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem:.action, target: self, action: #selector (rightClick(param:)))
         self.presenter = AddPresenter(view: self , model: AddModel())
-        
-
+    }
+    
+    @objc func rightClick(param: Any){        
+        prevVC.tems.append(Topic.init(topicName: topicTextField.text!, authorName: authorTextField.text!, ratingPlus: 44, ratingMinus: 33, description: descriptionTextField.text!, lock: UIImage(named: "closedLock")!))
+        presenter.pressButton()
+        navigationController?.popViewController(animated: true)
     }
     
     static func startForumView(NC: UINavigationController ,prevVC: ForumViewController) {
-    let regVC = AddTems.init(nibName: "AddTopic" , bundle: nil)
-    NC.pushViewController(regVC, animated: true)
-    regVC.prevVC = prevVC        
+        let regVC = AddTopicVC.init(nibName: "AddTopic" , bundle: nil)
+        NC.pushViewController(regVC, animated: true)
+        prevVC.refresh()
+        regVC.prevVC = prevVC
     }
 }

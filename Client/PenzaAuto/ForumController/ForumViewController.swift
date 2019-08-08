@@ -9,11 +9,8 @@
 import UIKit
 import SnapKit
 
-
-
 class ForumViewController: UIViewController, UITableViewDataSource , UITableViewDelegate{
-    @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var tableView: UITableView!   
     
     var userType: UserType?
     var presenter: ForumPresenter!
@@ -28,10 +25,11 @@ class ForumViewController: UIViewController, UITableViewDataSource , UITableView
         temp.append(topic2)
         return temp
     }
-    
  
-    
-    
+    // синглтон
+    // стат метод класса
+    // передать замыкания для обновления таблицы
+    // делегат
     
     
     // количество ячеек
@@ -55,7 +53,7 @@ class ForumViewController: UIViewController, UITableViewDataSource , UITableView
         print("\(indexPath.row)")
     }
 
- /// устанавливаем картинку в левую кнопку navigation item
+    /// устанавливаем картинку в левую кнопку navigation item
     func navigationLeftButtonImage(_ text: String) {
         let button = UIButton.init(type: .custom)
         //set image for button
@@ -68,53 +66,54 @@ class ForumViewController: UIViewController, UITableViewDataSource , UITableView
         //assign button to navigationbar
         self.navigationItem.leftBarButtonItem = barButton
     }
-  
+    
+    func refresh(){
+        tableView.reloadData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        refresh()
+        tems = createTems()
+        DispatchQueue.main.async { self.tableView.reloadData() }
         print(userType)
         tableView.dataSource = self
         tableView.delegate = self
-        
-        tems = createTems()
+        tableView.backgroundColor = .clear
         tableView.isScrollEnabled = true
         tableView.register(UINib(nibName: "AvtoTableViewCell", bundle: nil), forCellReuseIdentifier: idCell)
-        
-        self.navigationItem.title = UserName
+        self.navigationItem.title = userName
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 115.0/255.0, green: 211.0/255.0, blue: 255.0/255.0, alpha: 1.0)
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem:.add, target: self, action: #selector (rightClick(param:)))
-        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem:.add, target: self, action: #selector (rightClick(param:)))        
         self.presenter = ForumPresenter(view: self , model: ForumModel())
         presenter.captureForImage(userType: self.userType!)
       
-      
     }
     
-/// добавляет новую тему ( не готово)
+    
+     
+  
+    
+    /// добавляет новую тему (не готово)
     @objc func rightClick(param: Any){
-        
         if let nc = self.navigationController {
-            AddTems.startForumView(NC: nc, prevVC: self)
+            AddTopicVC.startForumView(NC: nc, prevVC: self)
         }
-        
         tableView.reloadData()
         print("Right click")
     }
     
-/// открывает профиль пользователя ! ( не готово)
+    /// открывает профиль пользователя ! (не готово)
     @objc func leftClick(param: Any){
         print("Left click")
     }
     
-// Делаем наш navigation bar снова видимым
+    // Делаем наш navigation bar снова видимым
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
        
-    }
-  
- 
-    
+    }       
     
     /// удаление тем свайпом влево c правами доступа admin
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -133,7 +132,5 @@ class ForumViewController: UIViewController, UITableViewDataSource , UITableView
             tableView.endUpdates()
         }
     }
-    
-    
     
 }

@@ -6,29 +6,68 @@
 //  Copyright © 2019 gitlab. All rights reserved.
 //
 
+import Foundation
 import XCTest
+import Mockit
+import Alamofire
+
+
 @testable import PenzaAuto
 
+open class CustomMatcher: TypeMatcher {
+    open func match(argument arg: Any, withArgument withArg: Any) -> Bool {
+        switch (arg, withArg) {
+        case ( _ as [Any], _ as [Any]):
+            return true
+        case ( _ as (([String : String]?) -> Void), _ as (([String : String]?) -> Void)):
+            return true
+
+        default:
+            return false
+        }
+    }
+}
+
+
 class PenzaAutoTests: XCTestCase {
+    var mockModel: MockModel!
+    var customMatcher: CustomMatcher!
+    var mockMatcher: MockMatcher!
+    var mockView: MockView!
+    
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
+        customMatcher = CustomMatcher()
+        mockMatcher = MockMatcher.sharedInstance
+        mockMatcher.register(CustomMatcher.self, typeMatcher: customMatcher)
+        mockModel = MockModel(testCase: self)
+        mockView = MockView(testCase: self)
     }
 
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+ 
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testPresenterModel() {
+        let presenter = LoginPresenter(view: mockView, model: mockModel)
+        let completion = presenter.completionBlock
+        mockModel.when().call(withReturnValue: mockModel.modelKeyPressed(completion: completion, login: "String", pass: "String")).thenDo {
+            (res: [Any?]) -> Void in
+            completion(["Volnikov": "True"])
         }
+        presenter.loginButtonPressed()
+        mockView.verify(verificationMode: Once()).goToNextScreen("Volnikov", userType: .admin)
     }
 
+    func testPodcaster() {
+        let nc = UINavigationController()
+        let vc = ViewController.init(nibName: Consts.nibNameFirstScreen, bundle: nil)
+        let _ = vc.view
+        XCTAssertEqual("Podcaster", vc.outPutLabel.text)
+    }
+    
+
+    
 }
+

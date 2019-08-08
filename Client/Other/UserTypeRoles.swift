@@ -11,4 +11,4 @@ import Foundation
 enum UserType {
     case admin, user, errorLogin
 }
-var UserName: String?
+var userName: String?

@@ -36,8 +36,6 @@ class RegestrationViewController: UIViewController, UITextFieldDelegate {
         print("Left Click")
     }
     override func viewDidLoad() {
-        
-        
        self.presenter = RegPresenter(view: self , model: RegModel())
        self.navigationItem.rightBarButtonItem = nil
        self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem:.redo, target: self, action: #selector (leftClick(param:)))
@@ -47,6 +45,11 @@ class RegestrationViewController: UIViewController, UITextFieldDelegate {
         let regVC = RegestrationViewController.init(nibName: Consts.nibNameRegScreen , bundle: nil)
         NC.pushViewController(regVC, animated: true)
         regVC.prevVC = prevVC
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = false
+        
     }
     
 }

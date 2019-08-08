@@ -14,14 +14,14 @@ extension Dictionary {
         switch self as? [String: String] {
         case [Consts.adminName : Consts.nameTrue]:
             if pass == Consts.adminPassword {
-                UserName = Consts.adminName
+                userName = Consts.adminName
                 return (Consts.loginSuccessful, UserType.admin)
             } else {
                 return (Consts.incorrectPasswordEntered, nil)
             }
         case [Consts.userName : Consts.nameTrue]:
             if pass == Consts.userPassword {
-                UserName = Consts.userName
+                userName = Consts.userName
                 return (Consts.loginSuccessful, UserType.user)
             } else {
                 return (Consts.incorrectPasswordEntered, nil)
@@ -33,6 +33,8 @@ extension Dictionary {
 
 class LoginModel {
     
+    
+   
     func modelKeyPressed(completion: @escaping([String : String]?) -> Void, login: String, pass: String) {
         let url = Consts.nameLocalHost
         let parameters = [Consts.nameLogin: login, Consts.namePassword: pass]
@@ -47,3 +49,5 @@ class LoginModel {
                 }
     }
 }
+
+

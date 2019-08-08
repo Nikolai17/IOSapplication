@@ -15,9 +15,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passTextFieldLogin: UITextField!
     @IBOutlet weak var outPutLabel: UILabel!
     
+    @IBOutlet weak var loginButtonOutlets: UIButton!
     var presenter: LoginPresenter!
   
-    @IBAction func LoginButton(_ sender: Any) {
+   
+    @IBAction func loginButton(_ sender: Any) {
         presenter.loginButtonPressed()
     }
     
@@ -41,8 +43,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-    func changeLabel(msg: String) {
-        self.outPutLabel.text = msg
+    func changeLabel(msg: String?) {
+        self.outPutLabel?.text = msg
     }
     
     func setLogFields(log: String, pass: String) {
@@ -52,12 +54,25 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        outPutLabel.text = ""
+        enableLoginButton(state: true)
         loginTextField.text = Consts.adminName
         passTextFieldLogin.text = Consts.adminPassword
         loginTextField.delegate = self
         passTextFieldLogin.delegate = self
         self.presenter = LoginPresenter(view: self, model: LoginModel())
-        
+    }
+    
+    private func enableLoginButton(state: Bool) {
+        loginButtonOutlets.isEnabled = state
+        switch state {
+        case true:
+            loginButtonOutlets.setTitleColor(ProjectColors.whiteColor, for: .normal)
+        case false:
+            loginButtonOutlets.setTitleColor(ProjectColors.translucentWhiteColor, for: .normal)
+        default:
+            break
+        }
     }
   
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
@@ -66,8 +81,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
             switch textField {
             case loginTextField:
                 presenter.loginChange(text: updatedText)
+                if updatedText.count < 4 || passTextFieldLogin.text?.count ?? 0 < 4 {
+                    enableLoginButton(state: false)
+                } else {
+                    enableLoginButton(state: true)
+                }
             case passTextFieldLogin:
                 presenter.passChange(text: updatedText)
+                if updatedText.count < 4 || loginTextField.text?.count ?? 0 < 4  {
+                    enableLoginButton(state: false)
+                } else {
+                    enableLoginButton(state: true)
+                }
             default: break
             }
             

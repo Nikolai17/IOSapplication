@@ -7,12 +7,13 @@
 //
 
 import Foundation
+import Alamofire
 
 class AddPresenter {
-    weak var view:  AddTems!
+    weak var view:  AddTopicVC!
     var model: AddModel
     
-    init(view: AddTems, model: AddModel) {
+    init(view: AddTopicVC, model: AddModel) {
         self.view = view
         self.model = model
     }
@@ -20,8 +21,6 @@ class AddPresenter {
     func pressButton() {
         model.modelKeyPressed(completion: { (result) -> Void in
             guard let res = result else { return }
-            
-           
         }, topicName: view.topicTextField.text!, authorName: view.authorTextField.text!, ratingPlus: 44, ratingMinus: 2,description: view.descriptionTextField.text!)
     }
 }

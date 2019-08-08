@@ -1,4 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-PenzaAuto/Pods-PenzaAuto-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
-${BUILT_PRODUCTS_DIR}/Mockit/Mockit.framework
 ${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework

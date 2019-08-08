@@ -44,6 +44,7 @@ class AvtoTableViewCell: UITableViewCell {
         plusIntegerCell.text = String("+ \(tema.ratingPlus)")
         minusIntegerCell.text = String("- \(tema.ratingMinus)")
         lockCell.image = tema.lock
+        
       
     }
     
