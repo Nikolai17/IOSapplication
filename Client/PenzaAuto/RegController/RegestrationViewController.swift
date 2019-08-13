@@ -36,10 +36,12 @@ class RegestrationViewController: UIViewController, UITextFieldDelegate {
         print("Left Click")
     }
     override func viewDidLoad() {
-       self.presenter = RegPresenter(view: self , model: RegModel())
-       self.navigationItem.rightBarButtonItem = nil
-       self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem:.redo, target: self, action: #selector (leftClick(param:)))
-    }
+        self.presenter = RegPresenter(view: self , model: RegModel())
+        self.navigationItem.rightBarButtonItem = nil       
+        self.navigationItem.title = "Форма регистрации"
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 115.0/255.0, green: 211.0/255.0, blue: 255.0/255.0, alpha: 1.0)
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+}
     
     static func startRegView(NC: UINavigationController ,prevVC: ViewController) {
         let regVC = RegestrationViewController.init(nibName: Consts.nibNameRegScreen , bundle: nil)

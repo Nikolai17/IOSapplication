@@ -14,6 +14,7 @@ var app: XCUIApplication!
         
         app = XCUIApplication()
         app.launch()
+        
     }
 
     override func tearDown() {
@@ -36,5 +37,5 @@ var app: XCUIApplication!
             XCTAssertTrue(pass.exists)
         }
     }
-
+  
 }

@@ -23,6 +23,8 @@
 		CC9DF70422DF1B6000534E24 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CC9DF70322DF1B6000534E24 /* Podfile */; };
 		CCA1B0E322FC16760062E325 /* MockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA1B0E222FC16760062E325 /* MockView.swift */; };
 		CCA3AE1B22FAEA3C0055D2C0 /* MockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA3AE1A22FAEA3C0055D2C0 /* MockModel.swift */; };
+		CCA4177A2302BBFE007726EA /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA417792302BBFE007726EA /* SecondScreen.swift */; };
+		CCA4177E2302D8A0007726EA /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA4177D2302D8A0007726EA /* main.storyboard */; };
 		CCA8996B22F2D2E500213B71 /* Tema.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA8996A22F2D2E500213B71 /* Tema.swift */; };
 		CCA8997122F2E12800213B71 /* AddTopicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA8997022F2E12800213B71 /* AddTopicVC.swift */; };
 		CCA8997322F2F65100213B71 /* AddTopic.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCA8997222F2F65100213B71 /* AddTopic.xib */; };
@@ -32,10 +34,13 @@
 		CCACC5D122F05B9400169704 /* RegestrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCACC5D022F05B9400169704 /* RegestrationViewController.swift */; };
 		CCB445BF22E1F20A0097928C /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB445BE22E1F20A0097928C /* LoginPresenter.swift */; };
 		CCB445C122E1F2180097928C /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB445C022E1F2180097928C /* LoginModel.swift */; };
+		CCBC900D2301578B00DCCAF4 /* ForumTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC900C2301578B00DCCAF4 /* ForumTest.swift */; };
 		CCBCC30C22F450C900925ACD /* AddModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBCC30B22F450C900925ACD /* AddModel.swift */; };
 		CCBCC30E22F450DC00925ACD /* AddPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBCC30D22F450DC00925ACD /* AddPresenter.swift */; };
 		CCC8263722EF1DF300D31BA2 /* UserTypeRoles.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC8263622EF1DF300D31BA2 /* UserTypeRoles.swift */; };
 		CCC8263922EF3B1600D31BA2 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC8263822EF3B1600D31BA2 /* Const.swift */; };
+		CCC8A54122FD5CEC00B6B35A /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC8A54022FD5CEC00B6B35A /* TableView.swift */; };
+		CCC8A54522FD748A00B6B35A /* TableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC8A54422FD748A00B6B35A /* TableMock.swift */; };
 		CCD3520522E99594002B0475 /* ForumViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCD3520422E99594002B0475 /* ForumViewController.xib */; };
 		CCD3520722E99646002B0475 /* ForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD3520622E99646002B0475 /* ForumViewController.swift */; };
 		CCD3520A22E9A9B4002B0475 /* ForumPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD3520922E9A9B4002B0475 /* ForumPresenter.swift */; };
@@ -103,6 +108,8 @@
 		CCA1B0E222FC16760062E325 /* MockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockView.swift; sourceTree = "<group>"; };
 		CCA3AE1A22FAEA3C0055D2C0 /* MockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockModel.swift; sourceTree = "<group>"; };
 		CCA3AE1C22FAFF940055D2C0 /* Mockit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Mockit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCA417792302BBFE007726EA /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
+		CCA4177D2302D8A0007726EA /* main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = main.storyboard; path = PenzaAuto/main.storyboard; sourceTree = "<group>"; };
 		CCA8996A22F2D2E500213B71 /* Tema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tema.swift; sourceTree = "<group>"; };
 		CCA8997022F2E12800213B71 /* AddTopicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTopicVC.swift; sourceTree = "<group>"; };
 		CCA8997222F2F65100213B71 /* AddTopic.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTopic.xib; sourceTree = "<group>"; };
@@ -111,10 +118,13 @@
 		CCACC5D022F05B9400169704 /* RegestrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegestrationViewController.swift; sourceTree = "<group>"; };
 		CCB445BE22E1F20A0097928C /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		CCB445C022E1F2180097928C /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		CCBC900C2301578B00DCCAF4 /* ForumTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumTest.swift; sourceTree = "<group>"; };
 		CCBCC30B22F450C900925ACD /* AddModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddModel.swift; sourceTree = "<group>"; };
 		CCBCC30D22F450DC00925ACD /* AddPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPresenter.swift; sourceTree = "<group>"; };
 		CCC8263622EF1DF300D31BA2 /* UserTypeRoles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTypeRoles.swift; sourceTree = "<group>"; };
 		CCC8263822EF3B1600D31BA2 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		CCC8A54022FD5CEC00B6B35A /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		CCC8A54422FD748A00B6B35A /* TableMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableMock.swift; sourceTree = "<group>"; };
 		CCD3520422E99594002B0475 /* ForumViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForumViewController.xib; sourceTree = "<group>"; };
 		CCD3520622E99646002B0475 /* ForumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumViewController.swift; sourceTree = "<group>"; };
 		CCD3520922E9A9B4002B0475 /* ForumPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumPresenter.swift; sourceTree = "<group>"; };
@@ -178,6 +188,7 @@
 		CC5EAA1F22DDD6E000C072D1 = {
 			isa = PBXGroup;
 			children = (
+				CCA4177D2302D8A0007726EA /* main.storyboard */,
 				CC9DF70322DF1B6000534E24 /* Podfile */,
 				CC5EAA2B22DDD6E100C072D1 /* AppDelegate.swift */,
 				CCC8263522EF1DCF00D31BA2 /* Other */,
@@ -216,9 +227,8 @@
 		CC5EAA3F22DDD70300C072D1 /* PenzaAutoTests */ = {
 			isa = PBXGroup;
 			children = (
-				CC5EAA4022DDD70300C072D1 /* PenzaAutoTests.swift */,
-				CCA3AE1A22FAEA3C0055D2C0 /* MockModel.swift */,
-				CCA1B0E222FC16760062E325 /* MockView.swift */,
+				CCC8A53F22FD5CC700B6B35A /* TableTests */,
+				CCC8A53D22FD5CA200B6B35A /* LoginViewTests */,
 				CC7297D822FC52AA0026F64D /* TestForum */,
 				CC5EAA4222DDD70400C072D1 /* Info.plist */,
 			);
@@ -229,6 +239,8 @@
 			isa = PBXGroup;
 			children = (
 				CC5EAA4B22DDD70400C072D1 /* PenzaAutoUITests.swift */,
+				CCA417792302BBFE007726EA /* SecondScreen.swift */,
+				CCBC900C2301578B00DCCAF4 /* ForumTest.swift */,
 				CC5EAA4D22DDD70400C072D1 /* Info.plist */,
 			);
 			path = PenzaAutoUITests;
@@ -274,6 +286,25 @@
 				CCC8263822EF3B1600D31BA2 /* Const.swift */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		CCC8A53D22FD5CA200B6B35A /* LoginViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC5EAA4022DDD70300C072D1 /* PenzaAutoTests.swift */,
+				CCA3AE1A22FAEA3C0055D2C0 /* MockModel.swift */,
+				CCA1B0E222FC16760062E325 /* MockView.swift */,
+			);
+			path = LoginViewTests;
+			sourceTree = "<group>";
+		};
+		CCC8A53F22FD5CC700B6B35A /* TableTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCC8A54022FD5CEC00B6B35A /* TableView.swift */,
+				CCC8A54422FD748A00B6B35A /* TableMock.swift */,
+			);
+			path = TableTests;
 			sourceTree = "<group>";
 		};
 		CCD3520822E99B0E002B0475 /* ForumController */ = {
@@ -410,6 +441,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA4177E2302D8A0007726EA /* main.storyboard in Resources */,
 				CCD3520522E99594002B0475 /* ForumViewController.xib in Resources */,
 				CC9A20AB22E200E100309E6F /* ViewController.xib in Resources */,
 				CC9DF70422DF1B6000534E24 /* Podfile in Resources */,
@@ -552,9 +584,11 @@
 				CC7297DE22FC52EF0026F64D /* MockFM.swift in Sources */,
 				CC5EAA4122DDD70300C072D1 /* PenzaAutoTests.swift in Sources */,
 				CC7297DA22FC52D30026F64D /* MockFV.swift in Sources */,
+				CCC8A54122FD5CEC00B6B35A /* TableView.swift in Sources */,
 				CCA1B0E322FC16760062E325 /* MockView.swift in Sources */,
 				CC7297DC22FC52E40026F64D /* MockFP.swift in Sources */,
 				CCA3AE1B22FAEA3C0055D2C0 /* MockModel.swift in Sources */,
+				CCC8A54522FD748A00B6B35A /* TableMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +597,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC5EAA4C22DDD70400C072D1 /* PenzaAutoUITests.swift in Sources */,
+				CCBC900D2301578B00DCCAF4 /* ForumTest.swift in Sources */,
+				CCA4177A2302BBFE007726EA /* SecondScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,19 +8,42 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+protocol moveContent {
+   func registerForKeyBoardNotifications()
+   func removeKeyboardNotifications()
+}
+
+extension UIViewController
+{
+    func hideKeyboard()
+    {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(
+            target: self,
+            action: #selector(UIViewController.dismissKeyboard))
+        
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
     
+    @objc func dismissKeyboard()
+    {
+        view.endEditing(true)
+    }
+}
+
+class ViewController: UIViewController, UITextFieldDelegate, moveContent {
+    @IBOutlet var scrollView: UIScrollView!
     @IBOutlet weak var signButton: UIButton!
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passTextFieldLogin: UITextField!
     @IBOutlet weak var outPutLabel: UILabel!
-    
     @IBOutlet weak var loginButtonOutlets: UIButton!
     var presenter: LoginPresenter!
-  
    
     @IBAction func loginButton(_ sender: Any) {
         presenter.loginButtonPressed()
+        loginTextField.resignFirstResponder()
+        passTextFieldLogin.resignFirstResponder()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,27 +63,48 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if let nc = self.navigationController {            
             RegestrationViewController.startRegView(NC: nc, prevVC: self)
         }
+        
     }
-    
-    
+      
     func changeLabel(msg: String?) {
         self.outPutLabel?.text = msg
     }
-    
-    func setLogFields(log: String, pass: String) {
-        
-    }
-    
-    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboard()
         outPutLabel.text = ""
         enableLoginButton(state: true)
-        loginTextField.text = Consts.adminName
-        passTextFieldLogin.text = Consts.adminPassword
+//        loginTextField.text = Consts.adminName
+//        passTextFieldLogin.text = Consts.adminPassword
         loginTextField.delegate = self
         passTextFieldLogin.delegate = self
         self.presenter = LoginPresenter(view: self, model: LoginModel())
+        registerForKeyBoardNotifications()
+    }
+        
+       
+    
+    func registerForKeyBoardNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(kbWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(kbWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    @objc func kbWillShow(_ notification: Notification){
+        let userInfo = notification.userInfo
+        let kbFrameSize = (userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        scrollView.contentOffset = CGPoint(x:0, y: kbFrameSize.height)
+    }
+    
+    @objc func kbWillHide(){
+        scrollView.contentOffset = CGPoint.zero
+    }
+    
+    deinit {
+        removeKeyboardNotifications()
+    }
+    func removeKeyboardNotifications() {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     private func enableLoginButton(state: Bool) {
@@ -99,6 +143,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
         return true
     }
+  
     
 }
 

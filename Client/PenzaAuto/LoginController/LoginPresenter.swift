@@ -13,8 +13,8 @@ class LoginPresenter {
     var model: LoginModel
     
     // для отладки кода в форме поля заполнены 
-    var login: String = "Volnikov"
-    var pass: String = "1234"
+    var login: String = ""
+    var pass: String = ""
     
     func completionBlock(_ result: [String : String]?) -> Void {
         guard let res = result else { return }

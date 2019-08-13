@@ -60,8 +60,7 @@ class PenzaAutoTests: XCTestCase {
         mockView.verify(verificationMode: Once()).goToNextScreen("Volnikov", userType: .admin)
     }
 
-    func testPodcaster() {
-        let nc = UINavigationController()
+    func testPodcaster() {       
         let vc = ViewController.init(nibName: Consts.nibNameFirstScreen, bundle: nil)
         let _ = vc.view
         XCTAssertEqual("Podcaster", vc.outPutLabel.text)

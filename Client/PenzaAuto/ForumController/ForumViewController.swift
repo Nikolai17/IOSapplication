@@ -19,8 +19,8 @@ class ForumViewController: UIViewController, UITableViewDataSource , UITableView
     
     func createTems() -> [Topic] {
         var temp: [Topic] = []
-        let topic1 = Topic(topicName: "Стук в движке", authorName: "Иванов", ratingPlus: 55, ratingMinus: 2, description: "нужно ремонтировать", lock: UIImage(named: "closedLock")!)
-        let topic2 = Topic(topicName: "Стук в коробке", authorName: "Петров", ratingPlus: 33, ratingMinus: 4, description: "нужно продавать", lock: UIImage(named: "openLock")!)
+        let topic1 = Topic(topicName: "Стук в движке", authorName: "Иванов", ratingPlus: 55, ratingMinus: 2, description: "нужно ремонтировать", lock: UIImage(named: "closedLock2")!)
+        let topic2 = Topic(topicName: "Стук в коробке", authorName: "Петров", ratingPlus: 33, ratingMinus: 4, description: "нужно продавать", lock: UIImage(named: "openLock2")!)
         temp.append(topic1)
         temp.append(topic2)
         return temp
@@ -76,7 +76,7 @@ class ForumViewController: UIViewController, UITableViewDataSource , UITableView
         refresh()
         tems = createTems()
         DispatchQueue.main.async { self.tableView.reloadData() }
-        print(userType)
+        //print(userType)
         tableView.dataSource = self
         tableView.delegate = self
         tableView.backgroundColor = .clear
@@ -87,7 +87,7 @@ class ForumViewController: UIViewController, UITableViewDataSource , UITableView
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem:.add, target: self, action: #selector (rightClick(param:)))        
         self.presenter = ForumPresenter(view: self , model: ForumModel())
-        presenter.captureForImage(userType: self.userType!)
+        presenter.captureForImage(userType: self.userType ?? .admin)
       
     }
     
